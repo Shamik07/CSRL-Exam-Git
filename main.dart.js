@@ -14522,7 +14522,7 @@ var $async$Mk=P.O(function(a,b){if(a===1)return P.P(b,s)
 while(true)switch(t){case 0:q=u.X
 p=P.ae(["is_deleted","0","is_admin","0"],q,q)
 t=2
-return P.K(G.mZ(P.eJ("https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/listOfUsers",0,null),C.V.d9(p),P.i5("utf-8"),C.c7),$async$Mk)
+return P.K(G.mZ(P.eJ("https://examapidemo.onfees.com/aras/listOfUsers",0,null),C.V.d9(p),P.i5("utf-8"),C.c7),$async$Mk)
 case 2:o=b
 q=o.b
 if(q===200){r=B.akZ(C.V.ho(0,new P.ff().bU(0,o.x),null))
@@ -30601,9 +30601,9 @@ j=P.ae(["user_id",H.b(m),"is_eng",H.b(l)],k,k)
 k=q.a
 k.aK(C.D,"startExamApi - "+j.i(0),null,null)
 t=4
-return P.K(G.mZ(P.eJ("https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/startExam",0,null),C.V.d9(j),P.i5("utf-8"),C.c7),$async$lU)
+return P.K(G.mZ(P.eJ("https://examapidemo.onfees.com/aras/startExam",0,null),C.V.d9(j),P.i5("utf-8"),C.c7),$async$lU)
 case 4:p=c
-if(p.b===200){k.aK(C.D,"API response DONE! - https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/startExam",null,null)
+if(p.b===200){k.aK(C.D,"API response DONE! - https://examapidemo.onfees.com/aras/startExam",null,null)
 o=new P.ff().bU(0,p.x)
 k.aK(C.D,"API response "+o,null,null)
 n=C.V.ho(0,o,null)
@@ -30629,9 +30629,9 @@ i=P.ae(["phone",a.d],j,j)
 j=q.a
 j.aK(C.D,"numberCheckApi - "+i.i(0),null,null)
 t=3
-return P.K(G.mZ(P.eJ("https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/numberCheck",0,null),C.V.d9(i),P.i5("utf-8"),C.c7),$async$r5)
+return P.K(G.mZ(P.eJ("https://examapidemo.onfees.com/aras/numberCheck",0,null),C.V.d9(i),P.i5("utf-8"),C.c7),$async$r5)
 case 3:p=c
-if(p.b===200){j.aK(C.D,"API response DONE! - https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/numberCheck",null,null)
+if(p.b===200){j.aK(C.D,"API response DONE! - https://examapidemo.onfees.com/aras/numberCheck",null,null)
 o=new P.ff().bU(0,p.x)
 j.aK(C.D,"API response "+o,null,null)
 n=C.V.ho(0,o,null)
@@ -30656,7 +30656,7 @@ lr:function(a){return this.a0C(a)},
 a0C:function(a){var t=0,s=P.S(u.z),r,q,p
 var $async$lr=P.O(function(b,c){if(b===1)return P.P(c,s)
 while(true)switch(t){case 0:q=C.vv.xj(9e5)+1e5
-p="https://cors-anywhere.herokuapp.com/http://fastsms.way2mint.com/SendSMS/sendmsg.php?uname=spapers&pass=12345678&send=DDYPSA&dest=+91"+a.d+"&msg="+C.d.i(q)+" is your OTP for the CSRL Exam.\nThis OTP will expire in the next 5 mins.\nBest of luck!&concat=1"
+p="http://fastsms.way2mint.com/SendSMS/sendmsg.php?uname=spapers&pass=12345678&send=DDYPSA&dest=+91"+a.d+"&msg="+C.d.i(q)+" is your OTP for the CSRL Exam.\nThis OTP will expire in the next 5 mins.\nBest of luck!&concat=1"
 t=4
 return P.K(V.fQ(),$async$lr)
 case 4:t=3
@@ -30685,9 +30685,9 @@ p=P.ae(["user_id",H.b(f),"otp",e,"device_id",H.b(d),"token",H.b(h)],g,g)
 g=q.a
 g.aK(C.D,"loginResultApi - "+p.i(0),null,null)
 t=4
-return P.K(G.mZ(P.eJ("https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/loginResult",0,null),C.V.d9(p),P.i5("utf-8"),C.c7),$async$nx)
+return P.K(G.mZ(P.eJ("https://examapidemo.onfees.com/aras/loginResult",0,null),C.V.d9(p),P.i5("utf-8"),C.c7),$async$nx)
 case 4:o=c
-if(o.b===200){g.aK(C.D,"API response DONE! - https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/loginResult",null,null)
+if(o.b===200){g.aK(C.D,"API response DONE! - https://examapidemo.onfees.com/aras/loginResult",null,null)
 n=new P.ff().bU(0,o.x)
 g.aK(C.D,"API response "+n,null,null)
 m=C.V.ho(0,n,null)
@@ -30727,9 +30727,9 @@ o=P.ae(["user_id",H.b(i),"is_eng",H.b(j),"device_id",H.b(k)],p,p)
 p=q.a
 p.aK(C.D,"firstQuestionApi - "+o.i(0),null,null)
 t=4
-return P.K(G.mZ(P.eJ("https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/firstQuestion",0,null),C.V.d9(o),P.i5("utf-8"),C.c7),$async$ni)
+return P.K(G.mZ(P.eJ("https://examapidemo.onfees.com/aras/firstQuestion",0,null),C.V.d9(o),P.i5("utf-8"),C.c7),$async$ni)
 case 4:n=c
-if(n.b===200){p.aK(C.D,"API response DONE! - https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/firstQuestion",null,null)
+if(n.b===200){p.aK(C.D,"API response DONE! - https://examapidemo.onfees.com/aras/firstQuestion",null,null)
 m=new P.ff().bU(0,n.x)
 p.aK(C.D,"API response "+m,null,null)
 l=C.V.ho(0,m,null)
@@ -30763,9 +30763,9 @@ n=P.ae(["user_id",H.b(h),"user_paper_id",H.b(p),"user_question_number",H.b(i),"d
 o=q.a
 o.aK(C.D,"nextQuestionApi - "+n.i(0),null,null)
 t=4
-return P.K(G.mZ(P.eJ("https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/nextQuestion",0,null),C.V.d9(n),P.i5("utf-8"),C.c7),$async$nH)
+return P.K(G.mZ(P.eJ("https://examapidemo.onfees.com/aras/nextQuestion",0,null),C.V.d9(n),P.i5("utf-8"),C.c7),$async$nH)
 case 4:m=c
-if(m.b===200){o.aK(C.D,"API response DONE! - https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/nextQuestion",null,null)
+if(m.b===200){o.aK(C.D,"API response DONE! - https://examapidemo.onfees.com/aras/nextQuestion",null,null)
 l=new P.ff().bU(0,m.x)
 o.aK(C.D,"API response "+l,null,null)
 k=C.V.ho(0,l,null)
@@ -30798,9 +30798,9 @@ o=P.ae(["user_question_id",H.b(a.z),"answer_id",H.b(i),"device_id",H.b(j),"user_
 p=q.a
 p.aK(C.D,"submitAnswerApi - "+o.i(0),null,null)
 t=4
-return P.K(G.mZ(P.eJ("https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/submitAnswer",0,null),C.V.d9(o),P.i5("utf-8"),C.c7),$async$lY)
+return P.K(G.mZ(P.eJ("https://examapidemo.onfees.com/aras/submitAnswer",0,null),C.V.d9(o),P.i5("utf-8"),C.c7),$async$lY)
 case 4:n=c
-if(n.b===200){p.aK(C.D,"API response DONE! - https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/submitAnswer",null,null)
+if(n.b===200){p.aK(C.D,"API response DONE! - https://examapidemo.onfees.com/aras/submitAnswer",null,null)
 m=new P.ff().bU(0,n.x)
 p.aK(C.D,"API response "+m,null,null)
 l=C.V.ho(0,m,null)
@@ -30830,9 +30830,9 @@ h=P.ae(["user_question_id",H.b(a.f)],i,i)
 i=q.a
 i.aK(C.D,"resultApi - "+h.i(0),null,null)
 t=3
-return P.K(G.mZ(P.eJ("https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/result",0,null),C.V.d9(h),P.i5("utf-8"),C.c7),$async$rn)
+return P.K(G.mZ(P.eJ("https://examapidemo.onfees.com/aras/result",0,null),C.V.d9(h),P.i5("utf-8"),C.c7),$async$rn)
 case 3:p=c
-if(p.b===200){i.aK(C.D,"API response DONE! - https://cors-anywhere.herokuapp.com/http://test.aayaa.in/aras/result",null,null)
+if(p.b===200){i.aK(C.D,"API response DONE! - https://examapidemo.onfees.com/aras/result",null,null)
 o=new P.ff().bU(0,p.x)
 i.aK(C.D,"API response "+o,null,null)
 n=C.V.ho(0,o,null)
