@@ -3,23 +3,20 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "ad808460338efe404a6134b95e0e028a",
-"assets/assets/images/a_1_1.jpeg": "46daa1bfebfe15618ab31bc5e689462b",
-"assets/assets/images/a_1_2.jpeg": "007d61389c8abf98cf98e791404b3d88",
-"assets/assets/images/a_1_3.jpeg": "62c89a062e8c88e8bd0202fec3addcd4",
-"assets/assets/images/a_1_4.jpeg": "a403e7515b8a47fc95507a59ddd38366",
+  "assets/AssetManifest.json": "9d367cf13f6cf10181b2a50c1d5c6c03",
+"assets/assets/images/csrl-logo-2.jpg": "57f08caa4c6a6b42288dff2524963f4c",
 "assets/assets/images/header_logo.png": "28562c09ea9372a30e37d669144c56e3",
-"assets/assets/images/q_1.jpeg": "71f04df0bf52743c4285f0ec721cff13",
+"assets/assets/images/loading.gif": "a6178f443133606fe19006604d0cafb5",
 "assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/NOTICES": "fa12b98431c8047df4208e4c7ddd631d",
+"assets/NOTICES": "ea8a2448a410bba251a97a53424afddf",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "7fd068f895b0232f9bd1f860f846c0fd",
 "/": "7fd068f895b0232f9bd1f860f846c0fd",
-"main.dart.js": "5ac2155a2f690864a473dc8d5021f5de",
+"main.dart.js": "43ae5ac788a9a2b7e3e95615d38df965",
 "manifest.json": "95f9a83e89825c013b43abd1a3f3169c"
 };
 
@@ -29,7 +26,7 @@ const CORE = [
   "/",
 "main.dart.js",
 "index.html",
-"assets/LICENSE",
+"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 
@@ -134,7 +131,7 @@ self.addEventListener("fetch", (event) => {
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
-  if (event.message == 'skipWaiting') {
+  if (event.data == 'skipWaiting') {
     return self.skipWaiting();
   }
 
@@ -158,8 +155,8 @@ async function downloadOffline() {
   }
   for (var resourceKey in Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
-      resources.add(resourceKey);
+      resources.push(resourceKey);
     }
   }
-  return Cache.addAll(resources);
+  return contentCache.addAll(resources);
 }
